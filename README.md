@@ -29,7 +29,10 @@
   [前端开源框架](https://gitee.com/xtoon/xtoon-boot-element) |
 </div>
 
+
 #### [微服务版：https://gitee.com/xtoon/xtoon-cloud](https://gitee.com/xtoon/xtoon-cloud) 
+
+#### 帮忙点 ⭐Star 支持下，感谢你们的支持。
 
 ## 为何开源
 项目初期或MVP阶段建议用DDD的单体框架开发应用，后期根据领域的不同弹性需求再改造成微服务版。<br >
@@ -44,9 +47,12 @@
 - 支持多租户的SaaS平台；
 
 ## 技术交流
-如果有什么问题或建议可以 [提ISSUE](https://gitee.com/xtoon/xtoon-boot/issues) 或 加群（QQ：130950009），交流技术，分享经验。 <br >
+<p>
+   <img width="150" src="https://xtoon.gitee.io/xtoon-boot-site/weixin.png">
+</p>
+欢迎大家加入微信群（扫码加我好友备注：加DDD群） 或 加QQ群（QQ：130950009），和DDD实践者们一起探讨DDD落地方案。 <br >
+
 如果你解决了某些bug，或者新增了一些功能，欢迎 [贡献代码](https://gitee.com/xtoon/xtoon-boot/pulls)，感激不尽~ <br >
-大家多点 ⭐Star 支持下。
 
 
 ## 技术选型
