@@ -32,7 +32,7 @@
 
 #### [微服务版：https://gitee.com/xtoon/xtoon-cloud](https://gitee.com/xtoon/xtoon-cloud) 
 
-#### 帮忙点 ⭐Star 支持下，感谢你们的支持。
+#### 帮忙右上角点下 ⭐Star ，感谢您的支持。
 
 ## 为何开源
 项目初期或MVP阶段建议用DDD的单体框架开发应用，后期根据领域的不同弹性需求再改造成微服务版。<br >
