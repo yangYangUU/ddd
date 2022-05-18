@@ -48,9 +48,10 @@
 
 ## 技术交流
 <p>
+   <img width="150" src="http://image.xiangtoon.com/IMG_1825.JPG">
    <img width="150" src="https://xtoon.gitee.io/xtoon-boot-site/weixin.png">
 </p>
-欢迎大家加入微信群（扫码加我好友备注：加DDD群） 或 加QQ群（QQ：130950009），和DDD实践者们一起探讨DDD落地方案。 <br >
+入扫码加入微信群或扫码加我好友拉你进大群 ，来和DDD实践者们一起探讨DDD落地方案吧。 <br >
 
 如果你解决了某些bug，或者新增了一些功能，欢迎 [贡献代码](https://gitee.com/xtoon/xtoon-boot/pulls)，感激不尽~ <br >
 
