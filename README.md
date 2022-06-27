@@ -8,7 +8,7 @@
 
 <div align="center">
 
-基于领域驱动设计（DDD）并支持SaaS平台的单体应用开发脚手架.
+基于领域驱动设计（DDD）并支持SaaS平台的单体应用开发框架.
 
 </div>
 
@@ -29,6 +29,16 @@
   [前端开源框架](https://gitee.com/xtoon/xtoon-boot-element) |
 </div>
 
+
+#### [微服务版：https://gitee.com/xtoon/xtoon-cloud](https://gitee.com/xtoon/xtoon-cloud) 
+
+#### 帮忙右上角点下 ⭐Star ，感谢您的支持。
+
+## 为何开源
+项目初期或MVP阶段就上微服务，服务拆分的很细，这会增加开发成本和风险。<br >
+个人认为可以选择合适的框架先开发基于DDD的单体应用，后期根据领域的不同弹性需求再快速的、低成本的过渡为微服务版。<br >
+这也是我们开源基于DDD的xtoon框架的初衷，目前单体应用版和微服务版都已发布正式版，如想更深入的学习和交流欢迎加入微信群！
+
 ## 为何选择xtoon-boot
 - 解决编写过程式和事务代码，造成后期维护逻辑混乱、维护成本高的痛点；
 - 边界规范易维持，核心业务逻辑内聚在领域内，低耦合，高内聚，易于长期维护；
@@ -37,9 +47,13 @@
 - 支持多租户的SaaS平台；
 
 ## 技术交流
-如果有什么问题或建议可以 [提ISSUE](https://gitee.com/xtoon/xtoon-boot/issues) 或 加群（QQ：130950009），交流技术，分享经验。 <br >
+<p>
+   <img width="150" src="https://xtoon.gitee.io/xtoon-boot-site/weixin2.JPG">
+   <img width="150" src="https://xtoon.gitee.io/xtoon-boot-site/weixin.png">
+</p>
+欢迎入扫码加入微信群或扫码加我好友拉你进大群 ，来和DDD实践者们一起探讨DDD落地方案吧。 <br >
+
 如果你解决了某些bug，或者新增了一些功能，欢迎 [贡献代码](https://gitee.com/xtoon/xtoon-boot/pulls)，感激不尽~ <br >
-大家多点 ⭐Star 支持下。
 
 
 ## 技术选型
@@ -74,36 +88,33 @@ xtoon-boot
 │   
 ├─xtoon-api                     接口模块
 │    │ 
-│    ├─java        
+│    ├─web        
 │    │    ├─common              接口通用类
 │    │    ├─util                接口工具类
-│    │    └─web                 controller类
+│    │    └─controller          controller类
 │    └─resources 
 │        ├─static.swagger       swagger文件
 │        ├─application.yml      全局配置文件
 │        └─logback-spring.xml   日志配置文件
 │ 
-├─xtoon-sys                     系统子域模块
+├─xtoon-sys                     系统管理子域
 │    │ 
 │    └─java 
 │         ├─application         应用层
+│         │    ├─assembler      DTO转换类
+│         │    ├─command        命令入参
+│         │    ├─dto            DTO
 │         │    └─impl           应用接口实现
 │         ├─domain              领域层（核心）
-│         │    ├─factory        工厂
 │         │    ├─model          领域模型
-│         │    ├─repository     资源接口
 │         │    ├─service        领域服务
 │         │    ├─specification  规格校验
 │         │    └─external       外部接口（防腐层）
-│         ├─infrastructure      基础设施层
-│         │    ├─repository     mybatis持久化类（应该都熟悉就不展开了）
-│         │    └─external       外部服务类
-│         └─facede              门面类层
-│              ├─assembler      DTO转换类
-│              ├─dto            DTO
-│              └─impl           门面类
+│         └─infrastructure      基础设施层
+│              ├─persistence    持久化类
+│              └─external       外部服务类
 │   
-├─xtoon-org                     组织架构子域模块
+├─xtoon-org                     组织管理子域
 │       
 
 ```
@@ -139,18 +150,13 @@ Alistair Cockburn提出了六边形架构，又被称为端口和适配器架构
 - 基础设施层  
 为上面各层提供通用的技术能力:为应用层传递消息，为领域层提供持久化机制， 为用户界面层绘制屏幕组件，等等。基础设施层还能够通过架构框架来支持4个层次 间的交互模式
 
-## 为何开源
-工作中一直有个困恼：为什么身边很多项目后期维护时业务逻辑变的混乱不堪，service层代码变的庞大难以变更，维护成本居高不下，有没有好的解决方式的？<br>
-Eric Evans的DDD（Domain-Driven Design 领域驱动设计）正是为了解决复杂业务而提出。
-我们1.1版本终于上线了，框架开源出来是想跟大家探讨并一起维护，希望今后有更多的项目和产品能使用基于框架开发。
-
 ## 相关文档
-- [CSDN博客-DDD系列](https://blog.csdn.net/haoxin963/category_10708582.html)持续更新中，欢迎关注！
+- [DDD概念](https://domain-driven-design.org)
 
 
 ## 维护者
 
-- [haoxin963](https://github.com/haoxin963) 
+- [享同科技](https://gitee.com/xtoon) 
 
 
 ## 版权声明
